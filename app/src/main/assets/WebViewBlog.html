@@ -1,0 +1,14 @@
+<!DOCTYPE >
+<html>
+<input value="Get OS Version From Android" type="button" onclick="getOSVersion()" />
+<span id="msgId"></span>
+<script>
+        function getOSVersion(){
+            AndroidApp.getOSVersion('Hello, this message is from WebView');
+        }
+
+        function renderOSVersion(message){
+            document.getElementById("msgId").textContent=message;
+        }
+    </script>
+</html>
