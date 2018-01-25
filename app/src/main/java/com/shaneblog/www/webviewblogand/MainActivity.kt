@@ -18,13 +18,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     @JavascriptInterface
-    public fun getOSVersion(message: String){
+    fun messageFromJS(message: String){
         runOnUiThread{
             Toast.makeText(applicationContext, message, Toast.LENGTH_LONG).show()
             var buildVersion = "Android : " + Build.VERSION.RELEASE + "(" + Build.VERSION.SDK_INT + ")";
-            webview.evaluateJavascript(
-                    "renderOSVersion('" + buildVersion + "')",
-                    null)
+            invokeJavascript(buildVersion)
         }
+    }
+
+    fun invokeJavascript(message:String?){
+        webview.evaluateJavascript("render('$message')", null)
     }
 }
