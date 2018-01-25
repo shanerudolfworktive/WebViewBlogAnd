@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        
+
         webview.loadUrl("https://shanerudolfworktive.github.io/WebViewBlogHtml/WebViewBlogPart2")
         webview.exposeFunctionToJS("identity", this::renderIdentity)
         webview.exposeFunctionToJS("workforce", this::renderJob)

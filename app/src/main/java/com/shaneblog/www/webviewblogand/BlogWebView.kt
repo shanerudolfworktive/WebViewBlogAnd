@@ -14,7 +14,7 @@ import com.google.gson.JsonParser
  * Created by shane1 on 1/23/18.
  */
 class BlogWebView : WebView{
-    constructor (context : Context) : super(context){ Initialize() }
+    constructor (context: Context) : super(context){ Initialize() }
     constructor (context: Context, attrs: AttributeSet): super(context, attrs) { Initialize() }
     constructor (context: Context, attrs: AttributeSet, defStyleAttr: Int): super(context, attrs, defStyleAttr) { Initialize() }
 
