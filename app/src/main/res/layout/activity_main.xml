@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.shaneblog.www.webviewblogand.MainActivity">
-    <WebView
+    <com.shaneblog.www.webviewblogand.BlogWebView
         android:id="@+id/webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </WebView>
+    </com.shaneblog.www.webviewblogand.BlogWebView>
 </android.support.constraint.ConstraintLayout>
